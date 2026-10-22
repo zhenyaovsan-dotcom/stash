@@ -1,0 +1,152 @@
+:root {
+  --vp-c-brand-1: #a8d8ff;
+  --vp-c-brand-2: #78bdff;
+  --vp-c-brand-3: #4b9ee8;
+  --vp-c-brand-soft: rgba(120, 189, 255, .12);
+  --vp-font-family-base: Inter, "Helvetica Neue", Arial, sans-serif;
+  --vp-c-bg: #080a0d;
+  --vp-c-bg-alt: #0d1015;
+  --vp-c-bg-elv: #11151b;
+  --vp-c-text-1: #edf2f8;
+  --vp-c-text-2: #8d98a8;
+  --vp-c-divider: #202630;
+}
+
+body {
+  letter-spacing: -0.02em;
+}
+
+.VPNav {
+  background: rgba(8, 10, 13, .88) !important;
+  backdrop-filter: blur(12px);
+}
+
+.VPNavBarTitle .title {
+  font-weight: 900 !important;
+  letter-spacing: -.07em;
+  text-transform: lowercase;
+}
+
+.VPHome {
+  padding-bottom: 80px;
+}
+
+.VPHero {
+  padding-top: 110px !important;
+  padding-bottom: 70px !important;
+}
+
+.VPHero .name {
+  max-width: 100%;
+  font-size: clamp(80px, 16vw, 180px) !important;
+  line-height: .8 !important;
+  font-weight: 950 !important;
+  letter-spacing: -.105em !important;
+  color: #f2f6fb !important;
+}
+
+.VPHero .text {
+  max-width: 650px;
+  margin-top: 34px;
+  font-size: clamp(20px, 3vw, 32px) !important;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  color: #a8d8ff !important;
+}
+
+.VPHero .tagline {
+  max-width: 540px;
+  margin-top: 16px;
+  color: #8793a3 !important;
+  font-size: 16px !important;
+  line-height: 1.7;
+}
+
+.VPHero .image,
+.VPHome .VPHero .image-container {
+  display: none !important;
+}
+
+.VPHero .actions {
+  margin-top: 32px;
+}
+
+.VPHero .action {
+  border-radius: 2px !important;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.VPHero .action.brand {
+  background: #a8d8ff !important;
+  color: #080a0d !important;
+  border: 1px solid #a8d8ff !important;
+}
+
+.VPHero .action.alt {
+  background: #11151b !important;
+  border: 1px solid #2a323e !important;
+}
+
+.VPFeatures {
+  margin-top: 20px !important;
+}
+
+.VPFeature {
+  background: #0c0f14 !important;
+  border: 1px solid #202630 !important;
+  border-radius: 3px !important;
+  transition: border-color .2s, transform .2s;
+}
+
+.VPFeature:hover {
+  border-color: #78bdff !important;
+  transform: translateY(-3px);
+}
+
+.VPFeature .title {
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  letter-spacing: -.04em;
+}
+
+.VPFeature .details {
+  color: #8d98a8 !important;
+  line-height: 1.7;
+}
+
+.VPDoc h1,
+.VPDoc h2 {
+  font-weight: 850;
+  letter-spacing: -.055em;
+}
+
+.VPSidebar {
+  background: #080a0d !important;
+}
+
+.VPFooter {
+  border-top: 1px solid #202630 !important;
+}
+
+.bottom-line {
+  padding: 40px 0;
+  color: #a8d8ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .22em;
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+    padding-top: 75px !important;
+  }
+
+  .VPHero .name {
+    font-size: 82px !important;
+  }
+
+  .VPHero .text {
+    font-size: 24px !important;
+  }
+}
