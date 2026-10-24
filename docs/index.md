@@ -1,35 +1,15 @@
 ---
-layout: home
-hero:
-  name: stash.
-  text: The stuff you actually need.
-  tagline: An independent hub for the Solana trenches. Tools, knowledge, research — without the guru noise.
-  actions:
-    - theme: brand
-      text: Explore tools
-      link: /tools/
-    - theme: alt
-      text: Open knowledge base
-      link: /knowledge/
-features:
-  - title: THE TOOLS
-    details: A curated stack of terminals, trackers and extensions worth knowing.
-    link: /tools/
-    linkText: Browse directory →
-  - title: THE KNOWLEDGE
-    details: Practical references for trench terminology and on-chain research.
-    link: /knowledge/
-    linkText: Read the wiki →
-  - title: THE RESEARCH
-    details: Case studies built around evidence, transactions and transparent reasoning.
-    link: /research/
-    linkText: View research →
+title: STASH — Knowledge Map
 ---
 
-<div class="home-intro">
-  <div class="eyebrow">LESS NOISE. BETTER SIGNAL.</div>
+<div class="home-stamp"><span>INDEPENDENT FIELD ARCHIVE</span><span>VOL. 001 / SOLANA TRENCHES</span></div>
 
-  STASH is a growing field guide for people navigating Solana memecoins. Useful resources, clear explanations, and research you can verify.
+# STASH<span class="title-period">.</span>
 
-  <p>Independent resource. No guaranteed calls. Always do your own research.</p>
-</div>
+<div class="home-deck">The stuff you actually need.<br>Research the trenches. Follow the evidence.</div>
+
+<div class="home-copy">An independent field archive for Solana memecoin traders. Practical knowledge, on-chain research and tools — without guru noise or fake certainty.</div>
+
+<KnowledgeMap />
+
+<div class="home-bottom"><span>NO CALLS. NO PROMISES.</span><span>JUST SIGNAL, SOURCES & CONTEXT.</span></div>
