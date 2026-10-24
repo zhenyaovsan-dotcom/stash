@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'STASH',
-  description: 'Independent field archive for Solana memecoin research',
+  description: 'Независимый архив о Solana memecoin research',
   appearance: 'dark',
   themeConfig: {
     siteTitle: 'STASH',
     nav: [
-      { text: 'Карта знаний', link: '/' },
-      { text: 'Энциклопедия', link: '/knowledge/' },
+      { text: 'Архив', link: '/' },
+      { text: 'База знаний', link: '/knowledge/' },
       { text: 'Исследования', link: '/research/' },
       { text: 'Инструменты', link: '/tools/' },
     ],
@@ -16,7 +16,11 @@ export default defineConfig({
       '/knowledge/': [
         { text: 'База знаний', items: [
           { text: 'Обзор', link: '/knowledge/' },
+          { text: 'Запуск токена', link: '/knowledge/launch' },
+          { text: 'Механика рынка', link: '/knowledge/market' },
           { text: 'On-chain исследование', link: '/knowledge/onchain' },
+          { text: 'Трейдинг и исполнение', link: '/knowledge/trading' },
+          { text: 'Риски', link: '/knowledge/risk' },
           { text: 'Словарь', link: '/knowledge/terms' },
         ] },
       ],
