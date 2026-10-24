@@ -120,3 +120,17 @@ a { transition: color .16s ease, border-color .16s ease; }
   .VPHome .vp-doc > .principles,
   .VPHome .vp-doc > .archive-footer { padding-left:20px; padding-right:20px; }
 }
+
+/* Layout correction after checking the deployed preview */
+.VPHome .vp-doc{width:100%;max-width:none!important;margin:0!important;padding:0!important}
+.VPHome .vp-doc>div{width:100%;max-width:none;margin:0;padding:0}
+.VPHome .vp-doc h2{margin-top:0!important}
+.VPHome .vp-doc .archive-topline,.VPHome .vp-doc .intro,.VPHome .vp-doc .terminal-line,.VPHome .vp-doc .library,.VPHome .vp-doc .principles,.VPHome .vp-doc .archive-footer{box-sizing:border-box;width:100%;max-width:1160px;margin-left:auto;margin-right:auto;padding-left:clamp(24px,5vw,64px);padding-right:clamp(24px,5vw,64px)}
+.intro{padding-top:clamp(64px,8vw,96px)!important;padding-bottom:56px!important}
+.intro h1{font-size:clamp(48px,6vw,76px);line-height:.99;margin-bottom:24px}
+.library{padding-top:54px!important;padding-bottom:66px!important}
+.section-heading h2{margin:0!important;font-size:clamp(28px,3.2vw,38px);line-height:1.12}
+.section-heading{margin-bottom:20px}
+.article-row{padding:17px 0;grid-template-columns:34px minmax(0,1fr) 90px 14px;gap:16px}
+.principles{padding-top:30px!important;padding-bottom:54px!important}
+@media(max-width:700px){.VPHome .vp-doc .archive-topline,.VPHome .vp-doc .intro,.VPHome .vp-doc .terminal-line,.VPHome .vp-doc .library,.VPHome .vp-doc .principles,.VPHome .vp-doc .archive-footer{padding-left:20px;padding-right:20px}.intro{padding-top:68px!important;padding-bottom:44px!important}.intro h1{font-size:clamp(44px,12vw,64px)}.library{padding-top:40px!important;padding-bottom:48px!important}.section-heading{align-items:start;flex-direction:column;gap:8px}.article-row{grid-template-columns:24px minmax(0,1fr) 14px;gap:10px;padding:15px 0}.row-tag{display:none}}
