@@ -134,3 +134,23 @@ a { transition: color .16s ease, border-color .16s ease; }
 .article-row{padding:17px 0;grid-template-columns:34px minmax(0,1fr) 90px 14px;gap:16px}
 .principles{padding-top:30px!important;padding-bottom:54px!important}
 @media(max-width:700px){.VPHome .vp-doc .archive-topline,.VPHome .vp-doc .intro,.VPHome .vp-doc .terminal-line,.VPHome .vp-doc .library,.VPHome .vp-doc .principles,.VPHome .vp-doc .archive-footer{padding-left:20px;padding-right:20px}.intro{padding-top:68px!important;padding-bottom:44px!important}.intro h1{font-size:clamp(44px,12vw,64px)}.library{padding-top:40px!important;padding-bottom:48px!important}.section-heading{align-items:start;flex-direction:column;gap:8px}.article-row{grid-template-columns:24px minmax(0,1fr) 14px;gap:10px;padding:15px 0}.row-tag{display:none}}
+
+/* Preview fix: VitePress also constrains the outer home container */
+.VPHome .VPContent .container,
+.VPHome .VPContent .content-container,
+.VPHome .vp-doc.container { width:100% !important; max-width:1160px !important; }
+.VPHome .VPContent .container { margin-left:auto !important; margin-right:auto !important; }
+.VPHome .vp-doc > div { width:100% !important; max-width:none !important; }
+.VPHome .vp-doc .archive-topline,
+.VPHome .vp-doc .intro,
+.VPHome .vp-doc .terminal-line,
+.VPHome .vp-doc .library,
+.VPHome .vp-doc .principles,
+.VPHome .vp-doc .archive-footer { box-sizing:border-box; width:100%; max-width:1160px; margin-left:auto; margin-right:auto; padding-left:clamp(24px,5vw,64px); padding-right:clamp(24px,5vw,64px); }
+.VPHome .vp-doc .intro { padding-top:clamp(64px,8vw,96px) !important; padding-bottom:48px !important; }
+.VPHome .vp-doc .library { padding-top:42px !important; padding-bottom:50px !important; }
+.VPHome .vp-doc .section-heading { margin-bottom:20px !important; }
+@media(max-width:700px){
+ .VPHome .VPContent .container,.VPHome .VPContent .content-container,.VPHome .vp-doc.container {max-width:100%!important}
+ .VPHome .vp-doc .archive-topline,.VPHome .vp-doc .intro,.VPHome .vp-doc .terminal-line,.VPHome .vp-doc .library,.VPHome .vp-doc .principles,.VPHome .vp-doc .archive-footer {padding-left:20px;padding-right:20px}
+}
