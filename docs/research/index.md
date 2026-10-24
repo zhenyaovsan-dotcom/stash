@@ -1,16 +1,20 @@
-# Research
+---
+title: Research archive
+description: On-chain workflows, wallet tracing, launch patterns and evidence-based case studies.
+---
 
-Receipts over promises.
+# Research archive
 
-Case studies should explain what happened, show verifiable evidence and separate facts from interpretation.
+Practical ways to move from an on-chain observation to a conclusion you can defend. Every workflow starts with reproducible transactions and marks uncertainty explicitly.
 
-## Case study template
+## Research notes
 
-1. **Overview** — token, launch date and context.
-2. **Timeline** — key transactions and price events.
-3. **Wallets** — relevant addresses and documented connections.
-4. **Liquidity** — changes, removals and pool activity.
-5. **Evidence** — links to explorers and transaction records.
-6. **Conclusion** — what the evidence supports and what remains uncertain.
+- [Follow funding wallets](/research/funding-wallets) — trace transfers and assess funding relationships.
+- [Analyze a dev wallet](/research/dev-wallet-analysis) — creator history, token distribution and sells.
+- [Bundle buys explained](/research/bundle-buys) — interpret launch-window clusters carefully.
+- [Facts vs. hypotheses](/research/onchain-evidence) — distinguish observed state from a narrative.
+- [Worked example: wallet cluster](/research/wallet-cluster-case) — synthetic data walkthrough with confidence labels.
 
-No fabricated results. No guaranteed calls.
+## Method
+
+A good investigation records the exact addresses and signatures, the source used to interpret them, alternative explanations, and what evidence would change the conclusion. This archive does not publish allegations from pattern matching alone.

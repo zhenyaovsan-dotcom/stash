@@ -1,17 +1,23 @@
-# Knowledge
+---
+title: Knowledge index
+description: A browsable index of mechanics, trading concepts and security basics for Solana memecoins.
+---
 
-A practical reference for the trenches.
+# Knowledge index
 
-No courses. No guru talk. Just useful information.
+The knowledge section explains the mechanisms behind launches and trades. Start with the foundations, then follow links from each article into related research.
 
-## Trench glossary
+## Foundations
 
-Understand the terms used across Solana memecoin trading.
+- [Inside a Pump.fun launch](/knowledge/pump-fun-launch) — launch sequence, first trades, and what to verify.
+- [Bonding curve & migration](/knowledge/bonding-curve-migration) — reserves, price movement, and pool migration.
+- [Liquidity & price impact](/knowledge/liquidity) — why spot price and executable exit value differ.
 
-[Open glossary →](/knowledge/terms)
+## Trading and psychology
 
-## On-chain basics
+- [Fast flip mechanics](/knowledge/fast-flip) — execution, fees, risk and realistic results.
+- [FOMO & attention liquidity](/knowledge/market-psychology) — narratives, social signals and crowd behavior.
 
-Learn what wallets, liquidity, holders and transactions can tell you.
+## A note on accuracy
 
-[Explore on-chain basics →](/knowledge/onchain)
+Mechanics that depend on active program versions or tool interfaces can change. These pages link to official documentation where possible and state when examples are illustrative. No wallet addresses, transaction signatures, or market statistics in the learning diagrams should be interpreted as live data.
