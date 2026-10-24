@@ -94,3 +94,29 @@ a { transition: color .16s ease, border-color .16s ease; }
   .VPDoc .content { padding:24px 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+/* Keep the homepage on one calm, readable column instead of stretching raw HTML full-width. */
+.VPHome .VPContent { padding-left:0 !important; padding-right:0 !important; }
+.VPHome .vp-doc > .archive-topline,
+.VPHome .vp-doc > .intro,
+.VPHome .vp-doc > .terminal-line,
+.VPHome .vp-doc > .library,
+.VPHome .vp-doc > .principles,
+.VPHome .vp-doc > .archive-footer {
+  display:block;
+  max-width:1164px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:32px;
+  padding-right:32px;
+}
+.VPHome .vp-doc > .archive-topline { display:flex; }
+.VPHome .vp-doc > .archive-footer { display:flex; }
+@media (max-width:700px) {
+  .VPHome .vp-doc > .archive-topline,
+  .VPHome .vp-doc > .intro,
+  .VPHome .vp-doc > .terminal-line,
+  .VPHome .vp-doc > .library,
+  .VPHome .vp-doc > .principles,
+  .VPHome .vp-doc > .archive-footer { padding-left:20px; padding-right:20px; }
+}
