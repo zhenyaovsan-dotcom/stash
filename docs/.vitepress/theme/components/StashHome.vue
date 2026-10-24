@@ -98,6 +98,10 @@ function toggleStep(index: number) {
   learningDone.value = learningDone.value.includes(index) ? learningDone.value.filter(x => x !== index) : [...learningDone.value, index]
   try { localStorage.setItem('stash-learning-done', JSON.stringify(learningDone.value)) } catch {}
 }
+function resetLearning() {
+  learningDone.value = []
+  try { localStorage.removeItem('stash-learning-done') } catch {}
+}
 function scrollTo(id: string) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }
 function onKeys(event: KeyboardEvent) {
   if ((event.key === '/' || (event.key.toLowerCase() === 'k' && (event.ctrlKey || event.metaKey))) && !(event.target instanceof HTMLInputElement) && !(event.target instanceof HTMLTextAreaElement)) {
@@ -262,7 +266,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeys))
               <h3>{{ activeNodeArticle.title }}</h3>
               <p>{{ activeNodeArticle.description }}</p>
               <div class="map-tags"><span>{{ activeNodeArticle.level }}</span><span>{{ activeNodeArticle.minutes }} MIN READ</span></div>
-              <button class="map-open" @click="openArticle(activeNodeArticle)">OPEN MATERIAL <span>↗</span></button>
+              <div class="map-actions"><button class="map-save" @click="toggleFavorite(activeNodeArticle.id)">{{ favorites.includes(activeNodeArticle.id) ? '★ SAVED' : '☆ SAVE' }}</button><button class="map-open" @click="openArticle(activeNodeArticle)">OPEN MATERIAL <span>↗</span></button></div>
             </aside>
           </div>
           <div class="map-note"><span>HOW TO READ THIS</span><p>The links are editorial relationships between topics, not claims that any particular wallets or tokens are connected.</p></div>
@@ -283,7 +287,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKeys))
                 <button class="step-open" @click="go(articles.find(a => a.id === step.id)?.path || '/')">READ ↗</button>
               </div>
             </div>
-            <div class="path-bottom"><span>PROGRESS SAVES IN THIS BROWSER</span><button @click="learningDone = []; try { localStorage.removeItem('stash-learning-done') } catch {}">RESET ROUTE ↺</button></div>
+            <div class="path-bottom"><span>PROGRESS SAVES IN THIS BROWSER</span><button @click="resetLearning">RESET ROUTE ↺</button></div>
           </div>
         </section>
 
