@@ -382,3 +382,10 @@ body { margin: 0; background: #f0efe9; color: #1b1b1a; font-family: var(--vp-fon
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+.map-actions { display: flex; gap: 7px; margin-top: 17px; }
+.map-actions .map-open { margin-top: 0; flex: 1; }
+.map-save { border: 1px solid #c9c8c0; background: transparent; color: #595850; padding: 0 10px; font: 8px 'DM Mono',monospace; cursor: pointer; white-space: nowrap; }
+.map-save:hover { background: #ddddd5; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 7px 13px; margin: -6px 0 25px; color: #8a8981; font: 9px 'DM Mono',monospace; letter-spacing: .055em; }
+@media (max-width: 600px) { .map-actions { flex-wrap: wrap; } .map-actions .map-open { min-width: 150px; } }
